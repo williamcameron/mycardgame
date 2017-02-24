@@ -1,5 +1,5 @@
 <?php
-	class gameTest extends PHPUnit_Framework_TestCase {
+	class GameTest extends PHPUnit_Framework_TestCase {
 		/** @test */
 		public function php_unit_works(){
 			$this->assertTrue(true);
