@@ -1,31 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1487973549">
-  <project timestamp="1487973549">
+<coverage generated="1487977164">
+  <project timestamp="1487977164">
     <package name="William">
       <file name="/home/william/coding/cardgame/src/Card.php">
         <class name="Card" namespace="William">
-          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+          <metrics methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="16" coveredelements="16"/>
         </class>
-        <line num="5" type="method" name="isLand" crap="1" count="1"/>
-        <line num="6" type="stmt" count="1"/>
-        <metrics loc="9" ncloc="9" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+        <line num="9" type="method" name="__construct" crap="1" count="9"/>
+        <line num="10" type="stmt" count="9"/>
+        <line num="11" type="stmt" count="9"/>
+        <line num="12" type="stmt" count="9"/>
+        <line num="14" type="method" name="isLand" crap="1" count="1"/>
+        <line num="15" type="stmt" count="1"/>
+        <line num="18" type="method" name="isCreature" crap="1" count="1"/>
+        <line num="19" type="stmt" count="1"/>
+        <line num="22" type="method" name="tap" crap="1" count="2"/>
+        <line num="23" type="stmt" count="2"/>
+        <line num="24" type="stmt" count="2"/>
+        <line num="26" type="method" name="tapped" crap="1" count="3"/>
+        <line num="27" type="stmt" count="3"/>
+        <line num="29" type="method" name="unTap" crap="1" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="31" type="stmt" count="1"/>
+        <metrics loc="32" ncloc="32" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="16" coveredelements="16"/>
       </file>
       <file name="/home/william/coding/cardgame/src/Deck.php">
         <class name="Deck" namespace="William">
-          <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="11" coveredelements="11"/>
+          <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="10" coveredelements="10"/>
         </class>
         <line num="9" type="method" name="__construct" crap="2" count="3"/>
         <line num="10" type="stmt" count="3"/>
         <line num="11" type="stmt" count="3"/>
         <line num="12" type="stmt" count="3"/>
-        <line num="13" type="stmt" count="3"/>
         <line num="14" type="stmt" count="3"/>
         <line num="15" type="stmt" count="3"/>
         <line num="16" type="method" name="cards" crap="1" count="1"/>
         <line num="17" type="stmt" count="1"/>
         <line num="20" type="method" name="draw" crap="1" count="1"/>
         <line num="21" type="stmt" count="1"/>
-        <metrics loc="23" ncloc="23" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="11" coveredelements="11"/>
+        <metrics loc="23" ncloc="23" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="10" coveredelements="10"/>
       </file>
       <file name="/home/william/coding/cardgame/src/Game.php">
         <class name="Game" namespace="William">
@@ -60,6 +73,6 @@
         <metrics loc="6" ncloc="6" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
     </package>
-    <metrics files="5" loc="70" ncloc="70" classes="5" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="25" coveredelements="25"/>
+    <metrics files="5" loc="93" ncloc="93" classes="5" methods="13" coveredmethods="13" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="25" elements="38" coveredelements="38"/>
   </project>
 </coverage>
