@@ -1,0 +1,12 @@
+{
+    "require": {
+        "phpunit/phpunit": "^4.8",
+        "illuminate/database": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+	    "William\\": "src/"
+	}
+    }
+
+}
