@@ -17,6 +17,7 @@
 		public function game_with_no_players_wont_start(){
 			$game = new William\Game;
 			$game->start();
+			$this->fail("Game with no players started.  Should have failed.");
 		}
 		
 		/** @test */
@@ -26,6 +27,16 @@
 			$game->addPlayer(new William\Player);
 			$game->start();
 			$this->assertTrue($game->started());
+		}
+		
+		/** @test 
+		  * @expectedException William\Exceptions\NotEnoughPlayersException
+			*/
+		public function game_with_one_player_wont_start(){
+			$game = new William\Game;
+			$game->addPlayer(new William\Player);
+			$game->start();
+			$this->fail("Game with one player started. Should have failed.");
 		}
 		
 	}
