@@ -18,4 +18,20 @@
 			$card = $deck->draw();
 			$this->assertInstanceOf("William\Card", $card);
 		}
+		
+		/** @test */
+		public function drawing_more_than_one_adjusts_deck_accordingly(){
+			$deck = new William\Deck;
+			$deck->draw(5);
+			
+			$this->assertCount(55, $deck->cards());
+		}
+		
+		/** @test */
+		public function drawing_from_deck_reduces_count(){
+			$deck = new William\Deck;
+			$deck->draw();
+			$this->assertCount(59, $deck->cards());
+		}
+		
 	}

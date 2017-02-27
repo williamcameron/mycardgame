@@ -18,7 +18,7 @@
 		}
 		
 		private function loadCardByName($name){
-			
+			// TODO: Extract to Database or external file, cant have this inline
 			$cards = array();
 			$cards["Forest"] = array("land" => true);
 			$cards["Balduvian Bears"] = array("creature" => true, "cost" => "1G", "power" => 2, "toughness" => 2);
@@ -30,11 +30,6 @@
 		}
 		
 		public function isLand() {
-			/*if($this->name == "Forest"){
-			  return true;
-			}else{
-				return false;
-			}*/
 			return (bool)$this->land;
 		}
 		

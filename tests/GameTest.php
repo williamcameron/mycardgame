@@ -16,6 +16,7 @@
 		  */
 		public function game_with_no_players_wont_start(){
 			$game = new William\Game;
+			$this->assertFalse($game->started());
 			$game->start();
 			$this->fail("Game with no players started.  Should have failed.");
 		}
@@ -37,6 +38,31 @@
 			$game->addPlayer(new William\Player);
 			$game->start();
 			$this->fail("Game with one player started. Should have failed.");
+		}
+		
+		/** @test */
+		public function player_drawing_opening_hand_has_7_cards_in_hand(){
+			$game = new William\Game;
+			$game->addPlayer(new William\Player);
+			$game->addPlayer(new William\Player);
+			$game->start();
+			
+			$game->drawHands();
+			
+			$this->assertEquals(7, $game->players()->first()->hand()->size());
+		}
+		
+		
+		/** @test */
+		public function player_drawing_opening_hand_leaves_53_cards_in_deck(){
+			$game = new William\Game;
+			$game->addPlayer(new William\Player);
+			$game->addPlayer(new William\Player);
+			$game->start();
+			
+			$game->drawHands();
+			
+			$this->assertEquals(53, $game->players()->first()->deck()->size());
 		}
 		
 	}
