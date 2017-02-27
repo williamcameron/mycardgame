@@ -13,6 +13,8 @@
 		public function start(){
 			if($this->players->count() == 0) {
 				throw new Exceptions\NoPlayersException;
+			}elseif($this->players->count() == 1){
+				throw new Exceptions\NotEnoughPlayersException;
 			}
 		}
 
