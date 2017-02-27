@@ -9,7 +9,7 @@
 		public function __construct(){
 			$cards = array();
 			for($x=0;$x<60;$x++){
-				$cards[] = new Card;
+				$cards[] = new Card("Forest");
 			}
 			$this->cards = new Collection($cards);
 		}

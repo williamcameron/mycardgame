@@ -6,17 +6,45 @@
 		private $tapped;
 		private $name;
 		
+		private $land;
+		private $creature;
+		
 		public function __construct($name=""){
 			$this->name = $name;
 			$this->tapped = false;
+			
+			$this->loadCardByName($name);
+			
 		}
 		
-		public function isLand(){
-			return true;
+		private function loadCardByName($name){
+			
+			$cards = array();
+			$cards["Forest"] = array("land" => true);
+			$cards["Balduvian Bears"] = array("creature" => true, "cost" => "1G", "power" => 2, "toughness" => 2);
+			
+			$attributes = $cards[$name];
+			foreach($attributes as $attribute => $value){
+				$this->{$attribute} = $value;
+			}
 		}
 		
-		public function isCreature(){
-			return false;
+		public function isLand() {
+			/*if($this->name == "Forest"){
+			  return true;
+			}else{
+				return false;
+			}*/
+			return (bool)$this->land;
+		}
+		
+		public function isCreature() {
+			return (bool)$this->creature;
+			if($this->name == "Forest"){
+			  return false;
+			}else{
+				return true;
+			}
 		}
 		
 		public function tap(){
