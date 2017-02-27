@@ -9,6 +9,8 @@
 		
 		/** @test */
 		public function player_has_a_deck(){
-			//
+			$player = new William\Player;
+			
+			$this->assertInstanceOf("William\Deck", $player->deck());
 		}
 	}
