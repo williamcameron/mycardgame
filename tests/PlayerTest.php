@@ -13,4 +13,5 @@
 			
 			$this->assertInstanceOf("William\Deck", $player->deck());
 		}
+		
 	}

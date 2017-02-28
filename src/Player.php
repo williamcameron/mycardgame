@@ -25,6 +25,9 @@
 		public function tap(){
 			
 		}
+		public function health(){
+			return 20;
+		}
 		public function manaPool(){
 			return [1];
 		}

@@ -80,4 +80,17 @@
 			
 		}
 		
+		/** @test */
+		public function players_start_game_with_20_health(){
+			$game = new William\Game;
+			$game->addPlayer(new William\Player);
+			$game->addPlayer(new William\Player);
+			$game->start();
+			
+			foreach($game->players() as $player){
+				$this->assertEquals(20, $player->health());
+			}
+			
+		}
+		
 	}

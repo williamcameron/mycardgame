@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1488240132">
-  <project timestamp="1488240132">
+<coverage generated="1488321729">
+  <project timestamp="1488321729">
     <package name="William">
       <file name="/home/cabox/workspace/src/Card.php">
         <class name="Card" namespace="William">
           <metrics methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="20" elements="27" coveredelements="27"/>
         </class>
-        <line num="12" type="method" name="__construct" crap="1" count="20"/>
-        <line num="13" type="stmt" count="20"/>
-        <line num="14" type="stmt" count="20"/>
-        <line num="16" type="stmt" count="20"/>
-        <line num="18" type="stmt" count="20"/>
-        <line num="20" type="method" name="loadCardByName" crap="2" count="20"/>
-        <line num="22" type="stmt" count="20"/>
-        <line num="23" type="stmt" count="20"/>
-        <line num="24" type="stmt" count="20"/>
-        <line num="25" type="stmt" count="20"/>
-        <line num="27" type="stmt" count="20"/>
-        <line num="28" type="stmt" count="20"/>
-        <line num="29" type="stmt" count="20"/>
-        <line num="30" type="stmt" count="20"/>
-        <line num="31" type="stmt" count="20"/>
+        <line num="12" type="method" name="__construct" crap="1" count="21"/>
+        <line num="13" type="stmt" count="21"/>
+        <line num="14" type="stmt" count="21"/>
+        <line num="16" type="stmt" count="21"/>
+        <line num="18" type="stmt" count="21"/>
+        <line num="20" type="method" name="loadCardByName" crap="2" count="21"/>
+        <line num="22" type="stmt" count="21"/>
+        <line num="23" type="stmt" count="21"/>
+        <line num="24" type="stmt" count="21"/>
+        <line num="25" type="stmt" count="21"/>
+        <line num="27" type="stmt" count="21"/>
+        <line num="28" type="stmt" count="21"/>
+        <line num="29" type="stmt" count="21"/>
+        <line num="30" type="stmt" count="21"/>
+        <line num="31" type="stmt" count="21"/>
         <line num="33" type="method" name="isLand" crap="1" count="2"/>
         <line num="34" type="stmt" count="2"/>
-        <line num="37" type="method" name="isCreature" crap="2" count="2"/>
+        <line num="37" type="method" name="isCreature" crap="1" count="2"/>
         <line num="38" type="stmt" count="2"/>
-        <line num="46" type="method" name="tap" crap="1" count="2"/>
-        <line num="47" type="stmt" count="2"/>
-        <line num="48" type="stmt" count="2"/>
-        <line num="50" type="method" name="tapped" crap="1" count="3"/>
-        <line num="51" type="stmt" count="3"/>
-        <line num="53" type="method" name="unTap" crap="1" count="1"/>
-        <line num="54" type="stmt" count="1"/>
-        <line num="55" type="stmt" count="1"/>
-        <metrics loc="56" ncloc="54" classes="1" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="20" elements="27" coveredelements="27"/>
+        <line num="41" type="method" name="tap" crap="1" count="2"/>
+        <line num="42" type="stmt" count="2"/>
+        <line num="43" type="stmt" count="2"/>
+        <line num="45" type="method" name="tapped" crap="1" count="3"/>
+        <line num="46" type="stmt" count="3"/>
+        <line num="48" type="method" name="unTap" crap="1" count="1"/>
+        <line num="49" type="stmt" count="1"/>
+        <line num="50" type="stmt" count="1"/>
+        <metrics loc="51" ncloc="49" classes="1" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="20" elements="27" coveredelements="27"/>
       </file>
       <file name="/home/cabox/workspace/src/Deck.php">
         <class name="Deck" namespace="William">
           <metrics methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="21" elements="25" coveredelements="25"/>
         </class>
-        <line num="10" type="method" name="__construct" crap="2" count="12"/>
-        <line num="11" type="stmt" count="12"/>
-        <line num="12" type="stmt" count="12"/>
-        <line num="13" type="stmt" count="12"/>
-        <line num="14" type="stmt" count="12"/>
-        <line num="15" type="stmt" count="12"/>
-        <line num="16" type="stmt" count="12"/>
-        <line num="17" type="stmt" count="12"/>
+        <line num="10" type="method" name="__construct" crap="2" count="13"/>
+        <line num="11" type="stmt" count="13"/>
+        <line num="12" type="stmt" count="13"/>
+        <line num="13" type="stmt" count="13"/>
+        <line num="14" type="stmt" count="13"/>
+        <line num="15" type="stmt" count="13"/>
+        <line num="16" type="stmt" count="13"/>
+        <line num="17" type="stmt" count="13"/>
         <line num="18" type="method" name="cards" crap="1" count="3"/>
         <line num="19" type="stmt" count="3"/>
         <line num="22" type="method" name="draw" crap="3" count="6"/>
@@ -70,27 +70,27 @@
         <class name="Game" namespace="William">
           <metrics methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="23" coveredelements="23"/>
         </class>
-        <line num="10" type="method" name="__construct" crap="1" count="7"/>
-        <line num="11" type="stmt" count="7"/>
-        <line num="12" type="stmt" count="7"/>
-        <line num="13" type="stmt" count="7"/>
-        <line num="15" type="method" name="start" crap="3" count="6"/>
-        <line num="16" type="stmt" count="6"/>
+        <line num="10" type="method" name="__construct" crap="1" count="8"/>
+        <line num="11" type="stmt" count="8"/>
+        <line num="12" type="stmt" count="8"/>
+        <line num="13" type="stmt" count="8"/>
+        <line num="15" type="method" name="start" crap="3" count="7"/>
+        <line num="16" type="stmt" count="7"/>
         <line num="17" type="stmt" count="1"/>
-        <line num="18" type="stmt" count="5"/>
+        <line num="18" type="stmt" count="6"/>
         <line num="19" type="stmt" count="1"/>
-        <line num="22" type="stmt" count="4"/>
-        <line num="23" type="stmt" count="4"/>
+        <line num="22" type="stmt" count="5"/>
+        <line num="23" type="stmt" count="5"/>
         <line num="25" type="method" name="drawHands" crap="2" count="3"/>
         <line num="26" type="stmt" count="3"/>
         <line num="27" type="stmt" count="3"/>
         <line num="28" type="stmt" count="3"/>
         <line num="29" type="stmt" count="3"/>
-        <line num="31" type="method" name="players" crap="1" count="3"/>
-        <line num="32" type="stmt" count="3"/>
-        <line num="35" type="method" name="addPlayer" crap="1" count="5"/>
-        <line num="36" type="stmt" count="5"/>
-        <line num="37" type="stmt" count="5"/>
+        <line num="31" type="method" name="players" crap="1" count="4"/>
+        <line num="32" type="stmt" count="4"/>
+        <line num="35" type="method" name="addPlayer" crap="1" count="6"/>
+        <line num="36" type="stmt" count="6"/>
+        <line num="37" type="stmt" count="6"/>
         <line num="39" type="method" name="started" crap="1" count="2"/>
         <line num="40" type="stmt" count="2"/>
         <metrics loc="42" ncloc="42" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="23" coveredelements="23"/>
@@ -105,12 +105,12 @@
       </file>
       <file name="/home/cabox/workspace/src/Player.php">
         <class name="Player" namespace="William">
-          <metrics methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="14" coveredelements="14"/>
+          <metrics methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="16" coveredelements="16"/>
         </class>
-        <line num="9" type="method" name="__construct" crap="1" count="7"/>
-        <line num="10" type="stmt" count="7"/>
-        <line num="11" type="stmt" count="7"/>
-        <line num="12" type="stmt" count="7"/>
+        <line num="9" type="method" name="__construct" crap="1" count="8"/>
+        <line num="10" type="stmt" count="8"/>
+        <line num="11" type="stmt" count="8"/>
+        <line num="12" type="stmt" count="8"/>
         <line num="14" type="method" name="deck" crap="1" count="4"/>
         <line num="15" type="stmt" count="4"/>
         <line num="18" type="method" name="hand" crap="1" count="1"/>
@@ -119,9 +119,11 @@
         <line num="24" type="stmt" count="1"/>
         <line num="25" type="method" name="tap" crap="1" count="1"/>
         <line num="27" type="stmt" count="1"/>
-        <line num="28" type="method" name="manaPool" crap="1" count="1"/>
+        <line num="28" type="method" name="health" crap="1" count="1"/>
         <line num="29" type="stmt" count="1"/>
-        <metrics loc="31" ncloc="31" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="14" coveredelements="14"/>
+        <line num="31" type="method" name="manaPool" crap="1" count="1"/>
+        <line num="32" type="stmt" count="1"/>
+        <metrics loc="34" ncloc="34" classes="1" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="16" coveredelements="16"/>
       </file>
     </package>
     <package name="William\Exceptions">
@@ -138,6 +140,6 @@
         <metrics loc="6" ncloc="6" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
     </package>
-    <metrics files="7" loc="194" ncloc="192" classes="7" methods="24" coveredmethods="24" conditionals="0" coveredconditionals="0" statements="67" coveredstatements="67" elements="91" coveredelements="91"/>
+    <metrics files="7" loc="192" ncloc="190" classes="7" methods="25" coveredmethods="25" conditionals="0" coveredconditionals="0" statements="68" coveredstatements="68" elements="93" coveredelements="93"/>
   </project>
 </coverage>
