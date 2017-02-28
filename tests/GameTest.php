@@ -52,7 +52,6 @@
 			$this->assertEquals(7, $game->players()->first()->hand()->size());
 		}
 		
-		
 		/** @test */
 		public function player_drawing_opening_hand_leaves_53_cards_in_deck(){
 			$game = new William\Game;
@@ -63,6 +62,22 @@
 			$game->drawHands();
 			
 			$this->assertEquals(53, $game->players()->first()->deck()->size());
+		}
+		
+		/** @test */
+		public function player_can_tap_basic_land_for_mana(){
+			$game = new William\Game;
+			$game->addPlayer(new William\Player);
+			$game->addPlayer(new William\Player);
+			$game->start();
+			
+			$game->drawHands();
+			
+			$game->players()->first()->play("Forest");
+			$game->players()->first()->tap("Forest");
+			
+			$this->assertCount(1, $game->players()->first()->manaPool());
+			
 		}
 		
 	}

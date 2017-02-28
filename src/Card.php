@@ -22,6 +22,7 @@
 			$cards = array();
 			$cards["Forest"] = array("land" => true);
 			$cards["Balduvian Bears"] = array("creature" => true, "cost" => "1G", "power" => 2, "toughness" => 2);
+			$cards["Norwood Ranger"] = array("creature" => true, "cost" => "G", "power" => 1, "toughness" => 2);;
 			
 			$attributes = $cards[$name];
 			foreach($attributes as $attribute => $value){

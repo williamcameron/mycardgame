@@ -18,4 +18,14 @@
 		public function hand(){
 			return $this->hand;
 		}
+		
+		public function play(){
+			
+		}
+		public function tap(){
+			
+		}
+		public function manaPool(){
+			return [1];
+		}
 	}
