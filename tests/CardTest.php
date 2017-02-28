@@ -50,4 +50,14 @@
 			$card->unTap();
 			$this->assertFalse($card->tapped());
 		}
+		
+		/** @test */
+		public function card_untaps_if_double_tapped(){
+			$card = new William\Card("Forest");
+			$this->assertFalse($card->tapped());
+			$card->tap();
+			$this->assertTrue($card->tapped());
+			$card->tap();
+			$this->assertFalse($card->tapped(), "Tapping a tapped Card should untap but has not.");
+		}
 	}

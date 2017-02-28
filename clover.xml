@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1488321729">
-  <project timestamp="1488321729">
+<coverage generated="1488324222">
+  <project timestamp="1488324222">
     <package name="William">
       <file name="/home/cabox/workspace/src/Card.php">
         <class name="Card" namespace="William">
           <metrics methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="20" elements="27" coveredelements="27"/>
         </class>
-        <line num="12" type="method" name="__construct" crap="1" count="21"/>
-        <line num="13" type="stmt" count="21"/>
-        <line num="14" type="stmt" count="21"/>
-        <line num="16" type="stmt" count="21"/>
-        <line num="18" type="stmt" count="21"/>
-        <line num="20" type="method" name="loadCardByName" crap="2" count="21"/>
-        <line num="22" type="stmt" count="21"/>
-        <line num="23" type="stmt" count="21"/>
-        <line num="24" type="stmt" count="21"/>
-        <line num="25" type="stmt" count="21"/>
-        <line num="27" type="stmt" count="21"/>
-        <line num="28" type="stmt" count="21"/>
-        <line num="29" type="stmt" count="21"/>
-        <line num="30" type="stmt" count="21"/>
-        <line num="31" type="stmt" count="21"/>
+        <line num="12" type="method" name="__construct" crap="1" count="22"/>
+        <line num="13" type="stmt" count="22"/>
+        <line num="14" type="stmt" count="22"/>
+        <line num="16" type="stmt" count="22"/>
+        <line num="18" type="stmt" count="22"/>
+        <line num="20" type="method" name="loadCardByName" crap="2" count="22"/>
+        <line num="22" type="stmt" count="22"/>
+        <line num="23" type="stmt" count="22"/>
+        <line num="24" type="stmt" count="22"/>
+        <line num="25" type="stmt" count="22"/>
+        <line num="27" type="stmt" count="22"/>
+        <line num="28" type="stmt" count="22"/>
+        <line num="29" type="stmt" count="22"/>
+        <line num="30" type="stmt" count="22"/>
+        <line num="31" type="stmt" count="22"/>
         <line num="33" type="method" name="isLand" crap="1" count="2"/>
         <line num="34" type="stmt" count="2"/>
         <line num="37" type="method" name="isCreature" crap="1" count="2"/>
         <line num="38" type="stmt" count="2"/>
-        <line num="41" type="method" name="tap" crap="1" count="2"/>
-        <line num="42" type="stmt" count="2"/>
-        <line num="43" type="stmt" count="2"/>
-        <line num="45" type="method" name="tapped" crap="1" count="3"/>
-        <line num="46" type="stmt" count="3"/>
+        <line num="41" type="method" name="tap" crap="1" count="3"/>
+        <line num="42" type="stmt" count="3"/>
+        <line num="43" type="stmt" count="3"/>
+        <line num="45" type="method" name="tapped" crap="1" count="4"/>
+        <line num="46" type="stmt" count="4"/>
         <line num="48" type="method" name="unTap" crap="1" count="1"/>
         <line num="49" type="stmt" count="1"/>
         <line num="50" type="stmt" count="1"/>

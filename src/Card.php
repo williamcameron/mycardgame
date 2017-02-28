@@ -38,8 +38,8 @@
 			return (bool)$this->creature;
 		}
 		
-		public function tap(){
-			$this->tapped = true;
+		public function tap() {
+			$this->tapped = !$this->tapped;
 		}
 		
 		public function tapped(){
