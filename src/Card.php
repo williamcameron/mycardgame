@@ -37,7 +37,9 @@
 		public function isCreature() {
 			return (bool)$this->creature;
 		}
-		
+		public function toughness(){
+			return $this->toughness;
+		}
 		public function tap() {
 			$this->tapped = !$this->tapped;
 		}

@@ -61,4 +61,10 @@
 			$this->assertFalse($card->tapped(), "Tapping a tapped Card should untap but has not.");
 		}
 		
+		/** @test */
+		public function creature_card_has_a_toughness(){
+			$card = new William\Card("Balduvian Bears");
+			$this->assertEquals(2, $card->toughness());
+		}
+		
 	}
