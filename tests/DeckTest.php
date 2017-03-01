@@ -15,7 +15,7 @@
 		/** @test */
 		public function drawing_from_deck_gives_a_card(){
 			$deck = new William\Deck;
-			$card = $deck->draw();
+			$card = $deck->drawCard();
 			$this->assertInstanceOf("William\Card", $card);
 		}
 		
@@ -32,6 +32,18 @@
 			$deck = new William\Deck;
 			$deck->draw();
 			$this->assertCount(59, $deck->cards());
+		}
+		
+		
+		/** @test 
+		  * @expectedException William\Exceptions\NoCardsLeftException
+			*/
+		public function drawing_more_than_deck_size_throws_no_cards_left_exception(){
+			$deck = new William\Deck;
+			$deck->draw(60);
+			
+			$deck->drawCard();
+			$this->fail("Drawing cards from empty deck worked when it shouldn't have.");
 		}
 		
 	}

@@ -60,4 +60,5 @@
 			$card->tap();
 			$this->assertFalse($card->tapped(), "Tapping a tapped Card should untap but has not.");
 		}
+		
 	}
