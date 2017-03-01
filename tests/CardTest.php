@@ -1,14 +1,21 @@
 <?php
+	use William\Card;
+
 	class CardTest extends PHPUnit_Framework_TestCase {
+		
+		private function basicLandCard(){
+			return Card::makeCard(["land" => true]);
+		}
+		
 		/** @test */
 		public function card_is_a_william_card(){
-			$card = new William\Card("Forest");
+			$card = $this->basicLandCard();
 			$this->assertInstanceOf("William\Card", $card);
 		}
 		
 		/** @test */
 		public function basic_land_card_is_type_land(){
-			$card = new William\Card("Forest");
+			$card = $this->basicLandCard();
 			$this->assertTrue($card->isLand());
 		}
 		

@@ -1,41 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1488354455">
-  <project timestamp="1488354455">
+<coverage generated="1488399053">
+  <project timestamp="1488399053">
     <package name="William">
       <file name="/home/cabox/workspace/src/Card.php">
         <class name="Card" namespace="William">
-          <metrics methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="21" elements="29" coveredelements="29"/>
+          <metrics methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="28" coveredstatements="28" elements="37" coveredelements="37"/>
         </class>
-        <line num="12" type="method" name="__construct" crap="1" count="24"/>
+        <line num="12" type="method" name="__construct" crap="2" count="24"/>
         <line num="13" type="stmt" count="24"/>
         <line num="14" type="stmt" count="24"/>
         <line num="16" type="stmt" count="24"/>
-        <line num="18" type="stmt" count="24"/>
-        <line num="20" type="method" name="loadCardByName" crap="2" count="24"/>
-        <line num="22" type="stmt" count="24"/>
-        <line num="23" type="stmt" count="24"/>
-        <line num="24" type="stmt" count="24"/>
-        <line num="25" type="stmt" count="24"/>
-        <line num="27" type="stmt" count="24"/>
-        <line num="28" type="stmt" count="24"/>
-        <line num="29" type="stmt" count="24"/>
-        <line num="30" type="stmt" count="24"/>
-        <line num="31" type="stmt" count="24"/>
-        <line num="33" type="method" name="isLand" crap="1" count="2"/>
-        <line num="34" type="stmt" count="2"/>
-        <line num="37" type="method" name="isCreature" crap="1" count="2"/>
-        <line num="38" type="stmt" count="2"/>
-        <line num="40" type="method" name="toughness" crap="1" count="1"/>
-        <line num="41" type="stmt" count="1"/>
-        <line num="43" type="method" name="tap" crap="1" count="3"/>
-        <line num="44" type="stmt" count="3"/>
-        <line num="45" type="stmt" count="3"/>
-        <line num="47" type="method" name="tapped" crap="1" count="4"/>
-        <line num="48" type="stmt" count="4"/>
-        <line num="50" type="method" name="unTap" crap="1" count="1"/>
-        <line num="51" type="stmt" count="1"/>
-        <line num="52" type="stmt" count="1"/>
-        <metrics loc="53" ncloc="51" classes="1" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="21" elements="29" coveredelements="29"/>
+        <line num="17" type="stmt" count="22"/>
+        <line num="18" type="stmt" count="22"/>
+        <line num="19" type="stmt" count="24"/>
+        <line num="21" type="method" name="makeCard" crap="2" count="2"/>
+        <line num="22" type="stmt" count="2"/>
+        <line num="23" type="stmt" count="2"/>
+        <line num="24" type="stmt" count="2"/>
+        <line num="25" type="stmt" count="2"/>
+        <line num="26" type="stmt" count="2"/>
+        <line num="28" type="method" name="loadCardByName" crap="2" count="22"/>
+        <line num="30" type="stmt" count="22"/>
+        <line num="31" type="stmt" count="22"/>
+        <line num="32" type="stmt" count="22"/>
+        <line num="33" type="stmt" count="22"/>
+        <line num="35" type="stmt" count="22"/>
+        <line num="36" type="stmt" count="22"/>
+        <line num="37" type="stmt" count="22"/>
+        <line num="38" type="stmt" count="22"/>
+        <line num="39" type="stmt" count="22"/>
+        <line num="41" type="method" name="isLand" crap="1" count="2"/>
+        <line num="42" type="stmt" count="2"/>
+        <line num="45" type="method" name="isCreature" crap="1" count="2"/>
+        <line num="46" type="stmt" count="2"/>
+        <line num="48" type="method" name="toughness" crap="1" count="1"/>
+        <line num="49" type="stmt" count="1"/>
+        <line num="51" type="method" name="tap" crap="1" count="3"/>
+        <line num="52" type="stmt" count="3"/>
+        <line num="53" type="stmt" count="3"/>
+        <line num="55" type="method" name="tapped" crap="1" count="4"/>
+        <line num="56" type="stmt" count="4"/>
+        <line num="58" type="method" name="unTap" crap="1" count="1"/>
+        <line num="59" type="stmt" count="1"/>
+        <line num="60" type="stmt" count="1"/>
+        <metrics loc="61" ncloc="59" classes="1" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="28" coveredstatements="28" elements="37" coveredelements="37"/>
       </file>
       <file name="/home/cabox/workspace/src/Deck.php">
         <class name="Deck" namespace="William">
@@ -148,6 +156,6 @@
         <metrics loc="6" ncloc="6" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
     </package>
-    <metrics files="8" loc="202" ncloc="200" classes="8" methods="27" coveredmethods="27" conditionals="0" coveredconditionals="0" statements="68" coveredstatements="68" elements="95" coveredelements="95"/>
+    <metrics files="8" loc="210" ncloc="208" classes="8" methods="28" coveredmethods="28" conditionals="0" coveredconditionals="0" statements="75" coveredstatements="75" elements="103" coveredelements="103"/>
   </project>
 </coverage>

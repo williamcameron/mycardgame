@@ -13,10 +13,18 @@
 			$this->name = $name;
 			$this->tapped = false;
 			
-			$this->loadCardByName($name);
-			
+			if($name) {
+				$this->loadCardByName($name);
+			}
 		}
 		
+		public static function makeCard($attributes=[]){
+			$card = new Card;
+			foreach($attributes as $attribute => $value){
+				$card->{$attribute} = $value;
+			}
+			return $card;
+		}
 		private function loadCardByName($name){
 			// TODO: Extract to Database or external file, cant have this inline
 			$cards = [];
