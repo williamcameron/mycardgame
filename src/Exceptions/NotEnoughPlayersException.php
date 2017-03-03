@@ -1,6 +1,7 @@
 <?php
-	namespace William\Exceptions;
 
-	class NotEnoughPlayersException extends \Exception {
+namespace William\Exceptions;
 
-	}
+class NotEnoughPlayersException extends \Exception
+{
+}
