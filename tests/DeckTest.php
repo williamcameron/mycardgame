@@ -1,5 +1,5 @@
 <?php
-    class DeckTest extends PHPUnit_Framework_TestCase
+    class DeckTest extends TestCase
     {
         private function defaultDeck()
         {

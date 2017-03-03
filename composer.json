@@ -6,8 +6,9 @@
     },
     "autoload": {
         "psr-4": {
-	    "William\\": "src/"
-	}
+	    			"William\\": "src/",
+						"": "tests/"
+				}
     }
 
 }

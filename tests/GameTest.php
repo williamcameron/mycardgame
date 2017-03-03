@@ -1,5 +1,5 @@
 <?php
-    class GameTest extends PHPUnit_Framework_TestCase
+    class GameTest extends TestCase
     {
         /** @test */
         public function php_unit_works()

@@ -1,19 +1,9 @@
 <?php
-    use William\Cards\BasicLand;
-use William\Cards\Card;
-use William\Cards\Creature;
+    
 
-class CardTest extends PHPUnit_Framework_TestCase
+class CardTest extends TestCase
 {
-    private function basicLandCard()
-    {
-        return BasicLand::make('Forest');
-    }
-
-    private function basicCreatureCard($specificCardName="Balduvian Bears")
-    {
-        return Creature::make($specificCardName);
-    }
+    
 
         /** @test */
         public function card_is_a_william_card()
@@ -84,17 +74,16 @@ class CardTest extends PHPUnit_Framework_TestCase
             $card->tap();
             $this->assertFalse($card->tapped(), 'Tapping a tapped Card should untap but has not.');
         }
-
-        /** @test */
-        public function creature_card_has_a_toughness()
-        {
-            $card = $this->basicCreatureCard();
-            $this->assertEquals(2, $card->toughness());
-        }
+      
   
   /** @test */
-    public function creature_has_a_power(){
+    public function converted_mana_cost_is_calculated_correctly(){
       $card = $this->basicCreatureCard("Norwood Ranger");
-      $this->assertEquals(1, $card->power());
+      $this->assertEquals(1, $card->convertedManaCost());
+    }
+  /** @test */
+    public function casting_cost_is_returned_correctly(){
+      $card = $this->basicCreatureCard("Norwood Ranger");
+      $this->assertEquals("G", $card->castingCost());
     }
 }

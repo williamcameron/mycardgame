@@ -38,7 +38,14 @@ class Card
             $this->{$attribute} = $value;
         }
     }
-
+		
+	public function convertedManaCost(){
+		return sizeof(str_split($this->cost));
+	}
+	public function castingCost(){
+		return strtoupper($this->cost);
+	}
+	
     public function isLand()
     {
         return (bool) $this->land;
