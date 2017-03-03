@@ -1,6 +1,7 @@
 <?php
-  namespace William\Cards;
 
-class BasicLand extends Card {
-  
+namespace William\Cards;
+
+class BasicLand extends Card
+{
 }
