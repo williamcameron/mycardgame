@@ -9,10 +9,10 @@ class Card
 
     private $land;
     private $creature;
-
+	
     public static function make($name)
-    {
-        return new self($name);
+		{
+			return new static($name);
     }
 
     public function __construct($name = '')
@@ -48,12 +48,7 @@ class Card
     {
         return (bool) $this->creature;
     }
-
-    public function toughness()
-    {
-        return $this->toughness;
-    }
-
+		
     public function tap()
     {
         $this->tapped = !$this->tapped;

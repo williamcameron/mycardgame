@@ -7,12 +7,12 @@ class CardTest extends PHPUnit_Framework_TestCase
 {
     private function basicLandCard()
     {
-        return BasicLand::make('Forest'); //Card::makeCard(["land" => true]);
+        return BasicLand::make('Forest');
     }
 
-    private function basicCreatureCard()
+    private function basicCreatureCard($specificCardName="Balduvian Bears")
     {
-        return Creature::make('Balduvian Bears');
+        return Creature::make($specificCardName);
     }
 
         /** @test */
@@ -91,4 +91,10 @@ class CardTest extends PHPUnit_Framework_TestCase
             $card = $this->basicCreatureCard();
             $this->assertEquals(2, $card->toughness());
         }
+  
+  /** @test */
+    public function creature_has_a_power(){
+      $card = $this->basicCreatureCard("Norwood Ranger");
+      $this->assertEquals(1, $card->power());
+    }
 }
