@@ -4,17 +4,17 @@ namespace William\Cards;
 
 class Creature extends Card
 {
-  protected $toughness;
-  protected $power;
+    protected $toughness;
+    protected $power;
   
-  public function toughness()
-  {
+    public function toughness()
+    {
     return $this->toughness;
-  }
+    }
   
-  public function power()
-  {
+    public function power()
+    {
     return $this->power;
-  }
+    }
   
 }

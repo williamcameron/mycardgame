@@ -10,9 +10,12 @@ class Card
     private $land;
     private $creature;
 	
+    /**
+     * @param string $name
+     */
     public static function make($name)
-		{
-			return new static($name);
+        {
+            return new static($name);
     }
 
     public function __construct($name = '')
@@ -25,6 +28,9 @@ class Card
         }
     }
 
+    /**
+     * @param string $name
+     */
     private function loadCardByName($name)
     {
         // TODO: Extract to Database or external file, cant have this inline
@@ -39,12 +45,12 @@ class Card
         }
     }
 		
-	public function convertedManaCost(){
-		return sizeof(str_split($this->cost));
-	}
-	public function castingCost(){
-		return strtoupper($this->cost);
-	}
+    public function convertedManaCost(){
+        return sizeof(str_split($this->cost));
+    }
+    public function castingCost(){
+        return strtoupper($this->cost);
+    }
 	
     public function isLand()
     {
