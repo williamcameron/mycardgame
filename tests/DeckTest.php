@@ -1,8 +1,13 @@
 <?php
 	class DeckTest extends PHPUnit_Framework_TestCase {
+		private function defaultDeck(){
+			return new William\Deck;
+		}
+		
+		
 		/** @test */
 		public function deck_is_a_deck(){
-			$deck = new William\Deck;
+			$deck = $this->defaultDeck();
 			$this->assertInstanceOf("William\Deck", $deck);
 		}
 		
@@ -16,7 +21,7 @@
 		public function drawing_from_deck_gives_a_card(){
 			$deck = new William\Deck;
 			$card = $deck->drawCard();
-			$this->assertInstanceOf("William\Card", $card);
+			$this->assertInstanceOf("William\Cards\Card", $card);
 		}
 		
 		/** @test */

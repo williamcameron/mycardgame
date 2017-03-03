@@ -1,5 +1,5 @@
 <?php
-	namespace William;
+	namespace William\Cards;
 
 	class Card {
 		
@@ -8,6 +8,14 @@
 		
 		private $land;
 		private $creature;
+		
+		
+		
+		public static function make($name){
+    	return new self($name);
+  	}
+		
+		
 		
 		public function __construct($name=""){
 			$this->name = $name;

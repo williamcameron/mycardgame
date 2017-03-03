@@ -1,6 +1,7 @@
 <?php
 	namespace William;
-
+	
+	use William\Cards\BasicLand;
 	use Illuminate\Support\Collection;
 
 	class Deck {
@@ -10,7 +11,7 @@
 		public function __construct(){
 			$cards = array();
 			for($x=0;$x<60;$x++){
-				$cards[] = new Card("Forest");
+				$cards[] = BasicLand::make("Forest");
 			}
 			$this->cards = new Collection($cards);
 			$this->drawn = new Collection();

@@ -1,16 +1,25 @@
 <?php
-	use William\Card;
+	use William\Cards\Card;
+  use William\Cards\BasicLand;
+	use William\Cards\Creature;
 
 	class CardTest extends PHPUnit_Framework_TestCase {
 		
 		private function basicLandCard(){
-			return Card::makeCard(["land" => true]);
+			return BasicLand::make("Forest"); //Card::makeCard(["land" => true]);
 		}
+		
+		private function basicCreatureCard(){
+			return Creature::make("Balduvian Bears");
+		}
+		
+		
+		
 		
 		/** @test */
 		public function card_is_a_william_card(){
 			$card = $this->basicLandCard();
-			$this->assertInstanceOf("William\Card", $card);
+			$this->assertInstanceOf("William\Cards\Card", $card);
 		}
 		
 		/** @test */
@@ -21,38 +30,38 @@
 		
 		/** @test */
 		public function basic_land_card_is_not_a_creature(){
-			$card = new William\Card("Forest");
+			$card = $this->basicLandCard();
 			$this->assertFalse($card->isCreature());
 		}
 		
 		/** @test */
 		public function creature_card_is_not_a_land_card(){
-			$card = new William\Card("Balduvian Bears");
+			$card = $this->basicCreatureCard();
 			$this->assertFalse($card->isLand());
 		}
 		
 		/** @test */
 		public function creature_card_is_type_creature(){
-			$card = new William\Card("Balduvian Bears");
+			$card = $this->basicCreatureCard();
 			$this->assertTrue($card->isCreature());
 		}
 		
 		/** @test */
 		public function not_tapped_by_default(){
-			$card = new William\Card("Forest");
+			$card = $this->basicLandCard();
 			$this->assertFalse($card->tapped());
 		}
 	
 		/** @test */
 		public function tapping_taps_card(){
-			$card = new William\Card("Forest");
+			$card = $this->basicLandCard();
 			$card->tap();
 			$this->assertTrue($card->tapped());
 		}
 		
 		/** @test */
 		public function tapped_card_can_be_untapped(){
-			$card = new William\Card("Forest");
+			$card = $this->basicLandCard();
 			$card->tap();
 			$card->unTap();
 			$this->assertFalse($card->tapped());
@@ -60,7 +69,7 @@
 		
 		/** @test */
 		public function card_untaps_if_double_tapped(){
-			$card = new William\Card("Forest");
+			$card = $this->basicLandCard();
 			$this->assertFalse($card->tapped());
 			$card->tap();
 			$this->assertTrue($card->tapped());
@@ -70,7 +79,7 @@
 		
 		/** @test */
 		public function creature_card_has_a_toughness(){
-			$card = new William\Card("Balduvian Bears");
+			$card = $this->basicCreatureCard();
 			$this->assertEquals(2, $card->toughness());
 		}
 		
