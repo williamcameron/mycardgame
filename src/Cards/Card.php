@@ -10,13 +10,13 @@ class Card
     private $land;
     private $creature;
     
-	  private $cost;
+    private $cost;
     /**
      * @param string $name
      */
     public static function make($name)
-        {
-            return new static($name);
+    {
+        return new static($name);
     }
 
     public function __construct($name = '')
@@ -45,14 +45,16 @@ class Card
             $this->{$attribute} = $value;
         }
     }
-		
-    public function convertedManaCost() {
+        
+    public function convertedManaCost()
+    {
         return sizeof(str_split($this->cost));
     }
-    public function castingCost() {
+    public function castingCost()
+    {
         return strtoupper($this->cost);
     }
-	
+    
     public function isLand()
     {
         return (bool) $this->land;
@@ -62,7 +64,7 @@ class Card
     {
         return (bool) $this->creature;
     }
-		
+        
     public function tap()
     {
         $this->tapped = !$this->tapped;

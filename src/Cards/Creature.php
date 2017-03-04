@@ -9,12 +9,11 @@ class Creature extends Card
   
     public function toughness()
     {
-    return $this->toughness;
+        return $this->toughness;
     }
   
     public function power()
     {
-    return $this->power;
+        return $this->power;
     }
-  
 }
