@@ -1,8 +1,9 @@
 <?php
     class PlayerTest extends TestCase
     {
-        private function get_a_new_player(){
-          return new William\Player();
+        private function get_a_new_player()
+        {
+            return new William\Player();
         }
         /** @test */
         public function player_is_a_player()

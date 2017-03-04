@@ -9,8 +9,8 @@ class Card
 
     private $land;
     private $creature;
-    
     private $cost;
+    
     /**
      * @param string $name
      */
@@ -48,7 +48,7 @@ class Card
         
     public function convertedManaCost()
     {
-        return sizeof(str_split($this->cost));
+        return count(str_split($this->cost));
     }
     public function castingCost()
     {

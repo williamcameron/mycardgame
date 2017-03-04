@@ -1,6 +1,7 @@
 <?php
 
-class CreatureCardTest extends TestCase {
+class CreatureCardTest extends TestCase
+{
   
         /** @test */
         public function creature_card_has_a_toughness()
@@ -10,8 +11,9 @@ class CreatureCardTest extends TestCase {
         }
   
   /** @test */
-    public function creature_has_a_power(){
-      $card = $this->basicCreatureCard("Norwood Ranger");
-      $this->assertEquals(1, $card->power());
+    public function creature_has_a_power()
+    {
+        $card = $this->basicCreatureCard("Norwood Ranger");
+        $this->assertEquals(1, $card->power());
     }
 }

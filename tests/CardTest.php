@@ -1,5 +1,5 @@
 <?php
-    
+
 
 class CardTest extends TestCase
 {
@@ -77,13 +77,15 @@ class CardTest extends TestCase
       
   
   /** @test */
-    public function converted_mana_cost_is_calculated_correctly(){
-      $card = $this->basicCreatureCard("Norwood Ranger");
-      $this->assertEquals(1, $card->convertedManaCost());
+    public function converted_mana_cost_is_calculated_correctly()
+    {
+        $card = $this->basicCreatureCard("Norwood Ranger");
+        $this->assertEquals(1, $card->convertedManaCost());
     }
   /** @test */
-    public function casting_cost_is_returned_correctly(){
-      $card = $this->basicCreatureCard("Norwood Ranger");
-      $this->assertEquals("G", $card->castingCost());
+    public function casting_cost_is_returned_correctly()
+    {
+        $card = $this->basicCreatureCard("Norwood Ranger");
+        $this->assertEquals("G", $card->castingCost());
     }
 }
