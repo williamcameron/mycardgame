@@ -46,10 +46,10 @@ class Card
         }
     }
 		
-    public function convertedManaCost(){
+    public function convertedManaCost() {
         return sizeof(str_split($this->cost));
     }
-    public function castingCost(){
+    public function castingCost() {
         return strtoupper($this->cost);
     }
 	
