@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/williamcameron/mycardgame.svg?branch=master)](https://travis-ci.org/williamcameron/mycardgame) [![codecov](https://codecov.io/gh/williamcameron/mycardgame/branch/master/graph/badge.svg)](https://codecov.io/gh/williamcameron/mycardgame) [![StyleCI](https://styleci.io/repos/83074948/shield?branch=master)](https://styleci.io/repos/83074948) [![Code Quality](https://img.shields.io/scrutinizer/g/williamcameron/mycardgame.svg?style=flat-square)](https://scrutinizer-ci.com/g/williamcameron/mycardgame/?branch=master) 
+[![Build Status](https://travis-ci.org/williamcameron/mycardgame.svg?branch=master)](https://travis-ci.org/williamcameron/mycardgame) [![codecov](https://codecov.io/gh/williamcameron/mycardgame/branch/master/graph/badge.svg)](https://codecov.io/gh/williamcameron/mycardgame) [![Code Quality](https://img.shields.io/scrutinizer/g/williamcameron/mycardgame.svg?style=flat-square)](https://scrutinizer-ci.com/g/williamcameron/mycardgame/?branch=master) 
 
 Beginnings of TDD Card Game
 
