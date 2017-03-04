@@ -9,7 +9,8 @@ class Card
 
     private $land;
     private $creature;
-	
+    
+	  private $cost;
     /**
      * @param string $name
      */
@@ -20,7 +21,6 @@ class Card
 
     public function __construct($name = '')
     {
-        $this->name = $name;
         $this->tapped = false;
 
         if ($name) {
@@ -34,11 +34,12 @@ class Card
     private function loadCardByName($name)
     {
         // TODO: Extract to Database or external file, cant have this inline
-            $cards = [];
+        $cards = [];
         $cards['Forest'] = ['land' => true];
         $cards['Balduvian Bears'] = ['creature' => true, 'cost' => '1G', 'power' => 2, 'toughness' => 2];
         $cards['Norwood Ranger'] = ['creature' => true, 'cost' => 'G', 'power' => 1, 'toughness' => 2];
 
+        $this->name = $name;
         $attributes = $cards[$name];
         foreach ($attributes as $attribute => $value) {
             $this->{$attribute} = $value;
