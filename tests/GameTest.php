@@ -54,7 +54,7 @@
             $game->addPlayer(new William\Player());
             $game->start();
 
-            $game->drawHands();
+            $game->drawOpeningHands();
 
             $this->assertEquals(7, $game->players()->first()->hand()->size());
         }
@@ -67,11 +67,25 @@
             $game->addPlayer(new William\Player());
             $game->start();
 
-            $game->drawHands();
+            $game->drawOpeningHands();
 
             $this->assertEquals(53, $game->players()->first()->deck()->size());
         }
+      
+      /** @test */
+        public function playing_a_card_reduces_hand_size()
+        {
+            $game = new William\Game();
+            $game->addPlayer(new William\Player());
+            $game->addPlayer(new William\Player());
+            $game->start();
 
+            $game->drawOpeningHands();
+            $game->players()->first()->play("Forest");
+            $this->assertEquals(6, $game->players()->first()->hand()->size());
+        }
+
+      
         /** @test */
         public function player_can_tap_basic_land_for_mana()
         {
@@ -80,7 +94,7 @@
             $game->addPlayer(new William\Player());
             $game->start();
 
-            $game->drawHands();
+            $game->drawOpeningHands();
 
             $game->players()->first()->play('Forest');
             $game->players()->first()->tap('Forest');

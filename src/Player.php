@@ -11,6 +11,7 @@ class Player
     {
         $this->deck = new Deck();
         $this->hand = new Hand();
+        $this->battlefield = new Battlefield();
     }
 
     public function deck()
@@ -23,8 +24,10 @@ class Player
         return $this->hand;
     }
 
-    public function play()
+    public function play($cardName)
     {
+        $card = $this->hand->cards()->pop();
+        $this->battlefield->add($card);
     }
 
     public function tap()

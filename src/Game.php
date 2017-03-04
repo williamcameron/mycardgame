@@ -26,10 +26,12 @@ class Game
         $this->started = true;
     }
 
-    public function drawHands()
+    public function drawOpeningHands()
     {
         foreach ($this->players as $player) {
-            $player->deck()->draw(7);
+            for($x=0;$x<7;$x++) {
+              $player->hand()->add($player->deck()->drawCard());
+            }
         }
     }
 
