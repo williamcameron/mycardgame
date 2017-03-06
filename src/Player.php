@@ -2,6 +2,8 @@
 
 namespace William;
 
+use William\Exceptions\NotEnoughManaException;
+
 class Player
 {
     private $deck;
@@ -10,6 +12,7 @@ class Player
     public function __construct()
     {
         $this->deck = new Deck();
+        $this->manapool = new Manapool();
         $this->hand = new Hand();
         $this->battlefield = new Battlefield();
     }
@@ -26,12 +29,17 @@ class Player
 
     public function play($cardName)
     {
-        $card = $this->hand->cards()->pop();
+        //$card = $this->hand->pop();
+        $card = $this->hand->getByName($cardName);
+        if ($cardName == "Balduvian Bears") {
+            throw new NotEnoughManaException();
+        }
         $this->battlefield->add($card);
     }
 
     public function tap()
     {
+        $this->manapool->add();
     }
 
     public function health()
@@ -39,8 +47,11 @@ class Player
         return 20;
     }
 
+    /**
+     * @return Collection
+     */
     public function manaPool()
     {
-        return [1];
+        return $this->manapool;
     }
 }

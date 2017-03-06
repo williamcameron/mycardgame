@@ -11,14 +11,6 @@ class Card
     private $creature;
     private $cost;
     
-    /**
-     * @param string $name
-     */
-    public static function make($name)
-    {
-        return new static($name);
-    }
-
     public function __construct($name = '')
     {
         $this->tapped = false;
@@ -44,6 +36,14 @@ class Card
         foreach ($attributes as $attribute => $value) {
             $this->{$attribute} = $value;
         }
+    }
+
+    /**
+     * @param string $name
+     */
+    public static function make($name)
+    {
+        return new static($name);
     }
         
     public function convertedManaCost()
@@ -78,5 +78,11 @@ class Card
     public function unTap()
     {
         $this->tapped = false;
+    }
+
+
+    public function name()
+    {
+        return $this->name;
     }
 }
