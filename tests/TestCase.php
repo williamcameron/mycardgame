@@ -1,9 +1,9 @@
 <?php
   use William\Cards\BasicLand;
-  use William\Cards\Card;
-  use William\Cards\Creature;
+use William\Cards\Card;
+use William\Cards\Creature;
 
-  /**
+/**
     * Base Test Case class for all to extend. Includes config and test helpers
     */
   class TestCase extends PHPUnit_Framework_TestCase

@@ -8,12 +8,11 @@
 
 namespace William;
 
-
 use Illuminate\Support\Collection;
 
 class CardCollection extends Collection
 {
-    function getByName($name)
+    public function getByName($name)
     {
         foreach ($this->items as $k => $i) {
             if ($i->name() == $name) {

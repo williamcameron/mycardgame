@@ -3,5 +3,7 @@ namespace William;
 
 class Battlefield
 {
-  public function add() {}
+    public function add()
+    {
+    }
 }

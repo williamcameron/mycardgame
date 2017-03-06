@@ -10,5 +10,4 @@ namespace William\Exceptions;
 
 class NotEnoughManaException extends \Exception
 {
-
 }
