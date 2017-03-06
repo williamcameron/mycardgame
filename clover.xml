@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1488661969">
-  <project timestamp="1488661969">
+<coverage generated="1488811925">
+  <project timestamp="1488811925">
     <package name="William">
       <file name="/home/cabox/workspace/src/Battlefield.php">
         <class name="Battlefield" namespace="William">
