@@ -2,7 +2,7 @@
 
 Beginnings of TDD Card Game
 
-Based on MTG - [Comprehensive Rules](http://media.wizards.com/images/magic/tcg/resources/rules/MagicCompRules_21031101.pdf) and Card Library from [The Gatherer](http://gatherer.wizards.com/Pages/Search/Default.aspx).
+Based on MTG - [Basic Rules](http://media.wizards.com/images/magic/resources/rules/EN_MTGM14_PrintedRulebook_LR.pdf), [Comprehensive Rules](http://media.wizards.com/images/magic/tcg/resources/rules/MagicCompRules_21031101.pdf) and Card Library from [The Gatherer](http://gatherer.wizards.com/Pages/Search/Default.aspx).
 
 All rules, names, logic, images, mechanics and anything that isn't mine copyright and trademark Wizards.   THis is purely a hobby project and not intended to upset anyone :) (Just saying).
 

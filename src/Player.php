@@ -8,6 +8,7 @@ class Player
 {
     private $deck;
     private $hand;
+    private $manapool;
 
     public function __construct()
     {
@@ -37,9 +38,12 @@ class Player
         $this->battlefield->add($card);
     }
 
-    public function tap()
+    public function tap($cardName="")
     {
-        $this->manapool->add();
+        $card = $this->hand->getByName($cardName);
+        if (!is_null($card) && $card->isLand()) {
+            $this->manapool->add($card->tapsFor());
+        }
     }
 
     public function health()

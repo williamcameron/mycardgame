@@ -8,13 +8,25 @@ use William\Cards\Creature;
     */
   class TestCase extends PHPUnit_Framework_TestCase
   {
-      public function basicLandCard()
+      protected function basicLandCard()
       {
           return BasicLand::make('Forest');
       }
 
-      public function basicCreatureCard($specificCardName="Balduvian Bears")
+      protected function basicCreatureCard($specificCardName="Balduvian Bears")
       {
           return Creature::make($specificCardName);
       }
+    
+    /**
+     * @return \William\Game
+     */
+    protected function startTestGame()
+    {
+        $game = new William\Game();
+        $game->addPlayer(new William\Player());
+        $game->addPlayer(new William\Player());
+        $game->start();
+        return $game;
+    }
   }

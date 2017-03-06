@@ -13,8 +13,9 @@ class Deck
     public function __construct()
     {
         $cards = [];
-        for ($x = 0; $x < 60; $x++) {
+        for ($x = 0; $x < 30; $x++) {
             $cards[] = BasicLand::make('Forest');
+            $cards[] = BasicLand::make('Mountain');
         }
         $this->cards = new Collection($cards);
         $this->drawn = new Collection();

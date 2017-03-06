@@ -33,18 +33,6 @@ class GameTest extends TestCase
         $this->assertTrue($game->started());
     }
 
-    /**
-     * @return \William\Game
-     */
-    private function startTestGame()
-    {
-        $game = new William\Game();
-        $game->addPlayer(new William\Player());
-        $game->addPlayer(new William\Player());
-        $game->start();
-        return $game;
-    }
-
     /** @test
      * @expectedException William\Exceptions\NotEnoughPlayersException
      */
@@ -55,6 +43,15 @@ class GameTest extends TestCase
         $game->start();
         $this->fail('Game with one player started. Should have failed.');
     }
+  
+    /** @test */
+  public function active_player_method_returns_player_one_correctly()
+  {
+      $game = $this->startTestGame();
+    
+      $this->assertSame($game->activePlayer(), $game->players()->first());
+  }
+    
 
     /** @test */
     public function player_drawing_opening_hand_has_7_cards_in_hand()
@@ -121,6 +118,20 @@ class GameTest extends TestCase
         $game->players()->first()->tap('Forest');
 
         $this->assertEquals(1, $game->players()->first()->manaPool()->size());
+    }
+/** @test */
+    public function tapping_two_land_adds_2_mana_to_pool()
+    {
+        $game = $this->startTestGame();
+
+        $game->drawOpeningHands();
+
+        $game->players()->first()->play('Forest');
+        $game->players()->first()->play('Mountain');
+        $game->players()->first()->tap('Forest');
+        $game->players()->first()->tap('Mountain');
+
+        $this->assertEquals(2, $game->activePlayer()->manaPool()->size());
     }
 
     /**

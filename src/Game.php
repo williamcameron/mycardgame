@@ -14,7 +14,10 @@ class Game
         $this->players = new Collection();
         $this->started = false;
     }
-
+    public function activePlayer()
+    {
+        return $this->players->first();
+    }
     public function start()
     {
         if ($this->players->count() == 0) {

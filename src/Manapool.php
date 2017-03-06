@@ -1,17 +1,17 @@
 <?php
 namespace William;
 
-class Manapool
-{
-    private $mana;
+use Illuminate\Support\Collection;
 
-    public function add()
+class Manapool extends Collection
+{
+    public function add($color_name="green")
     {
-        $this->mana++;
+        $this->push(new Mana(Mana::findByName($color_name)));
     }
 
     public function size()
     {
-        return $this->mana;
+        return count($this->items);
     }
 }
