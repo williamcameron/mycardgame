@@ -29,8 +29,8 @@ class Player
 
     public function play($cardName)
     {
-        $card = $this->hand->pop();
-        //$card = $this->hand->cards()->getByName($cardName);
+        //$card = $this->hand->pop();
+        $card = $this->hand->getByName($cardName);
         if ($cardName == "Balduvian Bears") {
             throw new NotEnoughManaException();
         }

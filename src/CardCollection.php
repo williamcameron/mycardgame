@@ -15,8 +15,9 @@ class CardCollection extends Collection
 {
     function getByName($name)
     {
-        foreach ($this->items as $i) {
-            if ($i->name == $name) {
+        foreach ($this->items as $k => $i) {
+            if ($i->name() == $name) {
+                $this->pull($k);
                 return $i;
             }
         }
