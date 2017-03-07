@@ -23,12 +23,12 @@ class Mana
     public static function findByName($name)
     {
         switch ($name) {
-        case "red":
-        return self::RED;
-        break;
-        case "green":
-        return self::GREEN;
-        break;
+            case "red":
+            return self::RED;
+            break;
+            case "green":
+            return self::GREEN;
+            break;
     }
     
         throw new ManaTypeNotFoundException;
