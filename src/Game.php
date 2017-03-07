@@ -32,7 +32,7 @@ class Game
     public function drawOpeningHands()
     {
         foreach ($this->players as $player) {
-            for ($x=0;$x<7;$x++) {
+            for ($x = 0; $x < 7; $x++) {
                 $player->hand()->add($player->deck()->drawCard());
             }
         }
