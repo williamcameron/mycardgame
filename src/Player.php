@@ -38,7 +38,7 @@ class Player
         $this->battlefield->add($card);
     }
 
-    public function tap($cardName="")
+    public function tap($cardName = "")
     {
         $card = $this->hand->getByName($cardName);
         if (!is_null($card) && $card->isLand()) {
@@ -52,7 +52,7 @@ class Player
     }
 
     /**
-     * @return Collection
+     * @return Manapool
      */
     public function manaPool()
     {
