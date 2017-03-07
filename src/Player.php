@@ -8,13 +8,16 @@ class Player
 {
     private $deck;
     private $hand;
+    private $battlefield;
     private $manapool;
+  
 
     public function __construct()
     {
         $this->deck = new Deck();
-        $this->manapool = new Manapool();
         $this->hand = new Hand();
+        // TODO: Possibly refactor into GameZones Class
+        $this->manapool = new Manapool();
         $this->battlefield = new Battlefield();
     }
 
@@ -30,7 +33,6 @@ class Player
 
     public function play($cardName)
     {
-        //$card = $this->hand->pop();
         $card = $this->hand->getByName($cardName);
         if ($cardName == "Balduvian Bears") {
             throw new NotEnoughManaException();
