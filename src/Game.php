@@ -8,16 +8,20 @@ class Game
 {
     private $players;
     private $started;
+    private $turn;
 
     public function __construct()
     {
         $this->players = new Collection();
         $this->started = false;
+        $this->turn = 0;
     }
+
     public function activePlayer()
     {
-        return $this->players->first();
+        return $this->players->all()[($this->turn + 1) % 2];
     }
+
     public function start()
     {
         if ($this->players->count() == 0) {
@@ -27,6 +31,7 @@ class Game
         }
 
         $this->started = true;
+        $this->turn = 1;
     }
 
     public function drawOpeningHands()
@@ -51,5 +56,15 @@ class Game
     public function started()
     {
         return $this->started;
+    }
+
+    public function turn()
+    {
+        return $this->turn;
+    }
+
+    public function endTurn()
+    {
+        $this->turn++;
     }
 }

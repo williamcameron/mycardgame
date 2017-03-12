@@ -43,15 +43,31 @@ class GameTest extends TestCase
         $game->start();
         $this->fail('Game with one player started. Should have failed.');
     }
-  
+
     /** @test */
-  public function active_player_method_returns_player_one_correctly()
-  {
-      $game = $this->startTestGame();
-    
-      $this->assertSame($game->activePlayer(), $game->players()->first());
-  }
-    
+    public function active_player_method_returns_player_one_correctly()
+    {
+        $game = $this->startTestGame();
+        $this->assertSame($game->activePlayer(), $game->players()->first());
+    }
+
+    /** @test */
+    public function start_of_game_it_is_turn_1()
+    {
+        $game = $this->startTestGame();
+        $this->assertEquals(1, $game->turn());
+    }
+
+    /** @test */
+    public function active_player_returns_player_two_on_turn_two()
+    {
+        $game = $this->startTestGame();
+        $game->endTurn();
+        $this->assertNotSame($game->activePlayer(), $game->players()->first());
+        $this->assertSame($game->activePlayer(), $game->players()[1]);
+
+    }
+
 
     /** @test */
     public function player_drawing_opening_hand_has_7_cards_in_hand()
@@ -60,7 +76,7 @@ class GameTest extends TestCase
 
         $game->drawOpeningHands();
 
-        $this->assertEquals(7, $game->players()->first()->hand()->size());
+        $this->assertEquals(7, $game->activePlayer()->hand()->size());
     }
 
     /** @test */
@@ -70,7 +86,7 @@ class GameTest extends TestCase
 
         $game->drawOpeningHands();
 
-        $this->assertEquals(53, $game->players()->first()->deck()->size());
+        $this->assertEquals(53, $game->activePlayer()->deck()->size());
     }
 
     /** @test */
@@ -79,8 +95,8 @@ class GameTest extends TestCase
         $game = $this->startTestGame();
 
         $game->drawOpeningHands();
-        $game->players()->first()->play("Forest");
-        $this->assertEquals(6, $game->players()->first()->hand()->size());
+        $game->activePlayer()->play("Forest");
+        $this->assertEquals(6, $game->activePlayer()->hand()->size());
     }
 
     /** @test */
@@ -89,9 +105,9 @@ class GameTest extends TestCase
         $game = $this->startTestGame();
 
         $game->drawOpeningHands();
-        $game->players()->first()->play("Forest");
-        $game->players()->first()->play("Forest");
-        $this->assertEquals(5, $game->players()->first()->hand()->size());
+        $game->activePlayer()->play("Forest");
+        $game->activePlayer()->play("Forest");
+        $this->assertEquals(5, $game->activePlayer()->hand()->size());
     }
 
     /** @test */
@@ -100,11 +116,11 @@ class GameTest extends TestCase
         $game = $this->startTestGame();
 
         $game->drawOpeningHands();
-        $game->players()->first()->play("Forest");
-        $game->players()->first()->play("Forest");
-        $game->players()->first()->play("Forest");
+        $game->activePlayer()->play("Forest");
+        $game->activePlayer()->play("Forest");
+        $game->activePlayer()->play("Forest");
 
-        $this->assertEquals(4, $game->players()->first()->hand()->size());
+        $this->assertEquals(4, $game->activePlayer()->hand()->size());
     }
 
     /** @test */
@@ -114,10 +130,10 @@ class GameTest extends TestCase
 
         $game->drawOpeningHands();
 
-        $game->players()->first()->play('Forest');
-        $game->players()->first()->tap('Forest');
+        $game->activePlayer()->play('Forest');
+        $game->activePlayer()->tap('Forest');
 
-        $this->assertEquals(1, $game->players()->first()->manaPool()->size());
+        $this->assertEquals(1, $game->activePlayer()->manaPool()->size());
     }
 /** @test */
     public function tapping_two_land_adds_2_mana_to_pool()
@@ -126,10 +142,10 @@ class GameTest extends TestCase
 
         $game->drawOpeningHands();
 
-        $game->players()->first()->play('Forest');
-        $game->players()->first()->play('Mountain');
-        $game->players()->first()->tap('Forest');
-        $game->players()->first()->tap('Mountain');
+        $game->activePlayer()->play('Forest');
+        $game->activePlayer()->play('Mountain');
+        $game->activePlayer()->tap('Forest');
+        $game->activePlayer()->tap('Mountain');
 
         $this->assertEquals(2, $game->activePlayer()->manaPool()->size());
     }
@@ -144,9 +160,9 @@ class GameTest extends TestCase
 
         $game->drawOpeningHands();
 
-        $this->assertEquals(0, $game->players()->first()->manaPool()->size());
+        $this->assertEquals(0, $game->activePlayer()->manaPool()->size());
 
-        $game->players()->first()->play($this->basicCreatureCard()->name());
+        $game->activePlayer()->play($this->basicCreatureCard()->name());
 
 //        $this->fail("Possible to play creature with not enough mana.");
     }

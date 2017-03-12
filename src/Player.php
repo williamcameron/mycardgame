@@ -10,10 +10,15 @@ class Player
     private $hand;
     private $battlefield;
     private $manapool;
-  
+    private $name;
 
-    public function __construct()
+
+    public function __construct($name = "")
     {
+        if ($name == "") {
+            $name = "Player " . mt_rand(0, 10);
+        }
+        $this->name = $name;
         $this->deck = new Deck();
         $this->hand = new Hand();
         // TODO: Possibly refactor into GameZones Class
