@@ -4,8 +4,9 @@ namespace William;
 
 use Illuminate\Support\Collection;
 use William\Cards\BasicLand;
+use William\CardCollection;
 
-class Deck
+class Deck extends CardCollection
 {
     private $cards;
     private $drawn;

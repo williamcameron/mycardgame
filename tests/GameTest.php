@@ -164,7 +164,7 @@ class GameTest extends TestCase
 
         $game->activePlayer()->play($this->basicCreatureCard()->name());
 
-//        $this->fail("Possible to play creature with not enough mana.");
+	$this->fail("Possible to play creature with not enough mana.");
     }
 
     /** @test */
