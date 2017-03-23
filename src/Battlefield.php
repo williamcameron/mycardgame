@@ -1,9 +1,7 @@
 <?php
 namespace William;
 
-class Battlefield
+class Battlefield extends CardCollection
 {
-    public function add()
-    {
-    }
+    
 }

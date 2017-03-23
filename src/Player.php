@@ -31,6 +31,10 @@ class Player
         return $this->deck;
     }
 
+    public function battlefield(){
+        return $this->battlefield;
+    }
+
     public function hand()
     {
         return $this->hand;
@@ -42,7 +46,7 @@ class Player
         if ($cardName == "Balduvian Bears") {
             throw new NotEnoughManaException();
         }
-        $this->battlefield->add();
+        $this->battlefield->add($card);
     }
 
     public function tap($cardName = "")
