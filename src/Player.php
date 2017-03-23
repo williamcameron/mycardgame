@@ -42,7 +42,7 @@ class Player
         if ($cardName == "Balduvian Bears") {
             throw new NotEnoughManaException();
         }
-        $this->battlefield->add($card);
+        $this->battlefield->add();
     }
 
     public function tap($cardName = "")

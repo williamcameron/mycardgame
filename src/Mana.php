@@ -7,14 +7,15 @@ class Mana
 {
     const GREEN = 1;
     const RED = 2;
-  
-  
+    
+    private $type;
+    
     /**
      * @param integer $type
      */
     public function __construct($type)
     {
-        $this->type = $type; //$this->findByName($type);
+        $this->type = $type;
     }
   
     /**
@@ -24,13 +25,11 @@ class Mana
     {
         switch ($name) {
             case "red":
-            return self::RED;
-            break;
+                return self::RED;
             case "green":
-            return self::GREEN;
-            break;
-    }
-    
+                return self::GREEN;
+        }
+        
         throw new ManaTypeNotFoundException;
     }
   
