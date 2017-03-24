@@ -65,9 +65,7 @@ class GameTest extends TestCase
         $game->endTurn();
         $this->assertNotSame($game->activePlayer(), $game->players()->first());
         $this->assertSame($game->activePlayer(), $game->players()[1]);
-
     }
-
 
     /** @test */
     public function player_drawing_opening_hand_has_7_cards_in_hand()
@@ -95,7 +93,7 @@ class GameTest extends TestCase
         $game = $this->startTestGame();
 
         $game->drawOpeningHands();
-        $game->activePlayer()->play("Forest");
+        $game->activePlayer()->play('Forest');
         $this->assertEquals(6, $game->activePlayer()->hand()->size());
     }
 
@@ -105,8 +103,8 @@ class GameTest extends TestCase
         $game = $this->startTestGame();
 
         $game->drawOpeningHands();
-        $game->activePlayer()->play("Forest");
-        $game->activePlayer()->play("Forest");
+        $game->activePlayer()->play('Forest');
+        $game->activePlayer()->play('Forest');
         $this->assertEquals(5, $game->activePlayer()->hand()->size());
     }
 
@@ -116,9 +114,9 @@ class GameTest extends TestCase
         $game = $this->startTestGame();
 
         $game->drawOpeningHands();
-        $game->activePlayer()->play("Forest");
-        $game->activePlayer()->play("Forest");
-        $game->activePlayer()->play("Forest");
+        $game->activePlayer()->play('Forest');
+        $game->activePlayer()->play('Forest');
+        $game->activePlayer()->play('Forest');
 
         $this->assertEquals(4, $game->activePlayer()->hand()->size());
     }
@@ -135,7 +133,8 @@ class GameTest extends TestCase
 
         $this->assertEquals(1, $game->activePlayer()->manaPool()->size());
     }
-/** @test */
+
+    /** @test */
     public function tapping_two_land_adds_2_mana_to_pool()
     {
         $game = $this->startTestGame();
@@ -164,7 +163,7 @@ class GameTest extends TestCase
 
         $game->activePlayer()->play($this->basicCreatureCard()->name());
 
-	$this->fail("Possible to play creature with not enough mana.");
+        $this->fail('Possible to play creature with not enough mana.');
     }
 
     /** @test */

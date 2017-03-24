@@ -3,9 +3,7 @@
 
 class CardTest extends TestCase
 {
-    
-
-        /** @test */
+    /** @test */
         public function card_is_a_william_card()
         {
             $card = $this->basicLandCard();
@@ -74,18 +72,18 @@ class CardTest extends TestCase
             $card->tap();
             $this->assertFalse($card->tapped(), 'Tapping a tapped Card should untap but has not.');
         }
-      
-  
-  /** @test */
+
+    /** @test */
     public function converted_mana_cost_is_calculated_correctly()
     {
-        $card = $this->basicCreatureCard("Norwood Ranger");
+        $card = $this->basicCreatureCard('Norwood Ranger');
         $this->assertEquals(1, $card->convertedManaCost());
     }
-  /** @test */
+
+    /** @test */
     public function casting_cost_is_returned_correctly()
     {
-        $card = $this->basicCreatureCard("Norwood Ranger");
-        $this->assertEquals("G", $card->castingCost());
+        $card = $this->basicCreatureCard('Norwood Ranger');
+        $this->assertEquals('G', $card->castingCost());
     }
 }

@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: william
  * Date: 3/5/17
- * Time: 11:14 PM
+ * Time: 11:14 PM.
  */
 
 namespace William;
@@ -17,11 +17,11 @@ class CardCollection extends Collection
         foreach ($this->items as $k => $i) {
             if ($i->name() == $name) {
                 $this->pull($k);
+
                 return $i;
             }
         }
     }
-
 
     public function add($value)
     {

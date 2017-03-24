@@ -12,11 +12,12 @@
             $deck = $this->defaultDeck();
             $this->assertInstanceOf("William\Deck", $deck);
         }
-	
-	/** @test */
-	public function deck_is_a_card_collection(){
-		$this->assertInstanceOf("William\CardCollection", $this->defaultDeck());
-	}
+
+    /** @test */
+    public function deck_is_a_card_collection()
+    {
+        $this->assertInstanceOf("William\CardCollection", $this->defaultDeck());
+    }
 
         /** @test */
         public function deck_has_60_cards_by_default()

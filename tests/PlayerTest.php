@@ -19,14 +19,11 @@
             $player = $this->get_a_new_player();
             $this->assertInstanceOf("William\Deck", $player->deck());
         }
-        
+
         /** @test */
         public function player_can_play_creature_to_battlefield()
         {
             $player = $this->get_a_new_player();
             $this->assertEquals(0, $player->battlefield()->size());
         }
-
-
-
     }

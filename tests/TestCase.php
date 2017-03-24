@@ -1,11 +1,10 @@
 <?php
   use William\Cards\BasicLand;
-use William\Cards\Card;
 use William\Cards\Creature;
 
 /**
-    * Base Test Case class for all to extend. Includes config and test helpers
-    */
+   * Base Test Case class for all to extend. Includes config and test helpers.
+   */
   class TestCase extends PHPUnit_Framework_TestCase
   {
       protected function basicLandCard()
@@ -13,11 +12,11 @@ use William\Cards\Creature;
           return BasicLand::make('Forest');
       }
 
-      protected function basicCreatureCard($specificCardName="Balduvian Bears")
+      protected function basicCreatureCard($specificCardName = 'Balduvian Bears')
       {
           return Creature::make($specificCardName);
       }
-    
+
     /**
      * @return \William\Game
      */
@@ -27,6 +26,7 @@ use William\Cards\Creature;
         $game->addPlayer(new William\Player());
         $game->addPlayer(new William\Player());
         $game->start();
+
         return $game;
     }
   }
