@@ -10,7 +10,7 @@ class Card
     private $land;
     private $creature;
     private $cost;
-    
+
     public function __construct($name = '')
     {
         $this->tapped = false;
@@ -27,8 +27,8 @@ class Card
     {
         // TODO: Extract to Database or external file, cant have this inline
         $cards = [];
-        $cards['Forest'] = ['land' => true, 'taps_for' => "green"];
-        $cards['Mountain'] = ['land' => true, 'taps_for' => "red"];
+        $cards['Forest'] = ['land' => true, 'taps_for' => 'green'];
+        $cards['Mountain'] = ['land' => true, 'taps_for' => 'red'];
         $cards['Balduvian Bears'] = ['creature' => true, 'cost' => '1G', 'power' => 2, 'toughness' => 2];
         $cards['Norwood Ranger'] = ['creature' => true, 'cost' => 'G', 'power' => 1, 'toughness' => 2];
 
@@ -46,16 +46,17 @@ class Card
     {
         return new static($name);
     }
-        
+
     public function convertedManaCost()
     {
         return count(str_split($this->cost));
     }
+
     public function castingCost()
     {
         return strtoupper($this->cost);
     }
-    
+
     public function isLand()
     {
         return (bool) $this->land;
@@ -65,7 +66,7 @@ class Card
     {
         return (bool) $this->creature;
     }
-        
+
     public function tap()
     {
         $this->tapped = !$this->tapped;
@@ -80,7 +81,6 @@ class Card
     {
         $this->tapped = false;
     }
-
 
     public function name()
     {

@@ -12,11 +12,10 @@ class Player
     private $manapool;
     private $name;
 
-
-    public function __construct($name = "")
+    public function __construct($name = '')
     {
-        if ($name == "") {
-            $name = "Player " . mt_rand(0, 10);
+        if ($name == '') {
+            $name = 'Player '.mt_rand(0, 10);
         }
         $this->name = $name;
         $this->deck = new Deck();
@@ -31,7 +30,8 @@ class Player
         return $this->deck;
     }
 
-    public function battlefield(){
+    public function battlefield()
+    {
         return $this->battlefield;
     }
 
@@ -43,13 +43,13 @@ class Player
     public function play($cardName)
     {
         $card = $this->hand->getByName($cardName);
-        if ($cardName == "Balduvian Bears") {
+        if ($cardName == 'Balduvian Bears') {
             throw new NotEnoughManaException();
         }
         $this->battlefield->add($card);
     }
 
-    public function tap($cardName = "")
+    public function tap($cardName = '')
     {
         $card = $this->hand->getByName($cardName);
         if (!is_null($card) && $card->isLand()) {

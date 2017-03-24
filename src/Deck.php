@@ -4,7 +4,6 @@ namespace William;
 
 use Illuminate\Support\Collection;
 use William\Cards\BasicLand;
-use William\CardCollection;
 
 class Deck extends CardCollection
 {
