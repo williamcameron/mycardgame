@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1490309022">
-  <project timestamp="1490309022">
+<coverage generated="1490397777">
+  <project timestamp="1490397777">
     <package name="William">
       <file name="C:\git-repos\mycardgame\src/Battlefield.php">
         <class name="Battlefield" namespace="William">
@@ -16,44 +16,44 @@
         <line num="17" type="stmt" count="8"/>
         <line num="18" type="stmt" count="8"/>
         <line num="19" type="stmt" count="7"/>
-        <line num="20" type="stmt" count="8"/>
-        <line num="23" type="stmt" count="1"/>
-        <line num="26" type="method" name="add" crap="1" count="10"/>
-        <line num="28" type="stmt" count="10"/>
-        <line num="29" type="stmt" count="10"/>
-        <line num="31" type="method" name="size" crap="1" count="8"/>
-        <line num="33" type="stmt" count="8"/>
+        <line num="21" type="stmt" count="8"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="26" type="method" name="add" crap="1" count="11"/>
+        <line num="28" type="stmt" count="11"/>
+        <line num="29" type="stmt" count="11"/>
+        <line num="31" type="method" name="size" crap="1" count="9"/>
+        <line num="33" type="stmt" count="9"/>
         <metrics loc="35" ncloc="29" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="11" coveredelements="11"/>
       </file>
       <file name="C:\git-repos\mycardgame\src/Deck.php">
         <class name="Deck" namespace="William">
           <metrics methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="24" coveredelements="24"/>
         </class>
-        <line num="14" type="method" name="__construct" crap="2" count="26"/>
+        <line num="13" type="method" name="__construct" crap="2" count="26"/>
+        <line num="15" type="stmt" count="26"/>
         <line num="16" type="stmt" count="26"/>
         <line num="17" type="stmt" count="26"/>
         <line num="18" type="stmt" count="26"/>
-        <line num="19" type="stmt" count="26"/>
+        <line num="20" type="stmt" count="26"/>
         <line num="21" type="stmt" count="26"/>
         <line num="22" type="stmt" count="26"/>
-        <line num="23" type="stmt" count="26"/>
-        <line num="25" type="method" name="cards" crap="1" count="3"/>
-        <line num="27" type="stmt" count="3"/>
-        <line num="30" type="method" name="drawCard" crap="1" count="12"/>
-        <line num="32" type="stmt" count="12"/>
-        <line num="35" type="method" name="draw" crap="3" count="14"/>
+        <line num="24" type="method" name="cards" crap="1" count="3"/>
+        <line num="26" type="stmt" count="3"/>
+        <line num="29" type="method" name="drawCard" crap="1" count="12"/>
+        <line num="31" type="stmt" count="12"/>
+        <line num="34" type="method" name="draw" crap="3" count="14"/>
+        <line num="36" type="stmt" count="14"/>
         <line num="37" type="stmt" count="14"/>
         <line num="38" type="stmt" count="14"/>
-        <line num="39" type="stmt" count="14"/>
-        <line num="40" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="14"/>
         <line num="42" type="stmt" count="14"/>
         <line num="43" type="stmt" count="14"/>
         <line num="44" type="stmt" count="14"/>
-        <line num="45" type="stmt" count="14"/>
-        <line num="48" type="stmt" count="14"/>
-        <line num="51" type="method" name="size" crap="1" count="1"/>
-        <line num="53" type="stmt" count="1"/>
-        <metrics loc="55" ncloc="55" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="24" coveredelements="24"/>
+        <line num="47" type="stmt" count="14"/>
+        <line num="50" type="method" name="size" crap="1" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <metrics loc="54" ncloc="54" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="24" coveredelements="24"/>
       </file>
       <file name="C:\git-repos\mycardgame\src/Game.php">
         <class name="Game" namespace="William">
@@ -103,44 +103,44 @@
         <class name="Mana" namespace="William">
           <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="11" coveredelements="11"/>
         </class>
-        <line num="16" type="method" name="__construct" crap="1" count="4"/>
-        <line num="18" type="stmt" count="4"/>
+        <line num="17" type="method" name="__construct" crap="1" count="4"/>
         <line num="19" type="stmt" count="4"/>
-        <line num="24" type="method" name="findByName" crap="3" count="5"/>
-        <line num="27" type="stmt" count="5"/>
-        <line num="28" type="stmt" count="2"/>
-        <line num="29" type="stmt" count="4"/>
-        <line num="30" type="stmt" count="3"/>
-        <line num="33" type="stmt" count="1"/>
-        <line num="36" type="method" name="type" crap="1" count="2"/>
-        <line num="38" type="stmt" count="2"/>
-        <metrics loc="40" ncloc="34" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="11" coveredelements="11"/>
+        <line num="20" type="stmt" count="4"/>
+        <line num="25" type="method" name="findByName" crap="3" count="5"/>
+        <line num="28" type="stmt" count="5"/>
+        <line num="29" type="stmt" count="2"/>
+        <line num="30" type="stmt" count="4"/>
+        <line num="31" type="stmt" count="3"/>
+        <line num="34" type="stmt" count="1"/>
+        <line num="37" type="method" name="type" crap="1" count="2"/>
+        <line num="39" type="stmt" count="2"/>
+        <metrics loc="41" ncloc="35" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="11" coveredelements="11"/>
       </file>
       <file name="C:\git-repos\mycardgame\src/Manapool.php">
         <class name="Manapool" namespace="William">
           <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
         </class>
-        <line num="8" type="method" name="add" crap="1" count="4"/>
+        <line num="7" type="method" name="add" crap="1" count="4"/>
+        <line num="9" type="stmt" count="4"/>
         <line num="10" type="stmt" count="4"/>
-        <line num="11" type="stmt" count="4"/>
-        <metrics loc="14" ncloc="14" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        <metrics loc="11" ncloc="11" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
       </file>
       <file name="C:\git-repos\mycardgame\src/Player.php">
         <class name="Player" namespace="William">
           <metrics methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="22" elements="30" coveredelements="30"/>
         </class>
-        <line num="16" type="method" name="__construct" crap="2" count="19"/>
+        <line num="15" type="method" name="__construct" crap="2" count="19"/>
+        <line num="17" type="stmt" count="19"/>
         <line num="18" type="stmt" count="19"/>
-        <line num="19" type="stmt" count="19"/>
+        <line num="20" type="stmt" count="19"/>
         <line num="21" type="stmt" count="19"/>
         <line num="22" type="stmt" count="19"/>
-        <line num="23" type="stmt" count="19"/>
+        <line num="24" type="stmt" count="19"/>
         <line num="25" type="stmt" count="19"/>
         <line num="26" type="stmt" count="19"/>
-        <line num="27" type="stmt" count="19"/>
-        <line num="29" type="method" name="deck" crap="1" count="11"/>
-        <line num="31" type="stmt" count="11"/>
-        <line num="34" type="method" name="battlefield" crap="1" count="1"/>
+        <line num="28" type="method" name="deck" crap="1" count="11"/>
+        <line num="30" type="stmt" count="11"/>
+        <line num="33" type="method" name="battlefield" crap="1" count="1"/>
         <line num="35" type="stmt" count="1"/>
         <line num="38" type="method" name="hand" crap="1" count="10"/>
         <line num="40" type="stmt" count="10"/>
@@ -165,15 +165,15 @@
         <class name="Turn" namespace="William">
           <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="8" coveredelements="8"/>
         </class>
-        <line num="11" type="method" name="__construct" crap="1" count="2"/>
-        <line num="12" type="stmt" count="2"/>
-        <line num="13" type="stmt" count="2"/>
-        <line num="15" type="method" name="phase" crap="1" count="2"/>
-        <line num="16" type="stmt" count="2"/>
-        <line num="19" type="method" name="end_phase" crap="1" count="1"/>
-        <line num="20" type="stmt" count="1"/>
-        <line num="21" type="stmt" count="1"/>
-        <metrics loc="22" ncloc="22" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="8" coveredelements="8"/>
+        <line num="12" type="method" name="__construct" crap="1" count="2"/>
+        <line num="14" type="stmt" count="2"/>
+        <line num="15" type="stmt" count="2"/>
+        <line num="17" type="method" name="phase" crap="1" count="2"/>
+        <line num="19" type="stmt" count="2"/>
+        <line num="22" type="method" name="end_phase" crap="1" count="1"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <metrics loc="26" ncloc="26" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="8" coveredelements="8"/>
       </file>
     </package>
     <package name="William\Cards">
@@ -209,20 +209,20 @@
         <line num="47" type="stmt" count="39"/>
         <line num="50" type="method" name="convertedManaCost" crap="1" count="1"/>
         <line num="52" type="stmt" count="1"/>
-        <line num="54" type="method" name="castingCost" crap="1" count="1"/>
-        <line num="56" type="stmt" count="1"/>
-        <line num="59" type="method" name="isLand" crap="1" count="6"/>
-        <line num="61" type="stmt" count="6"/>
-        <line num="64" type="method" name="isCreature" crap="1" count="2"/>
-        <line num="66" type="stmt" count="2"/>
-        <line num="69" type="method" name="tap" crap="1" count="3"/>
-        <line num="71" type="stmt" count="3"/>
+        <line num="55" type="method" name="castingCost" crap="1" count="1"/>
+        <line num="57" type="stmt" count="1"/>
+        <line num="60" type="method" name="isLand" crap="1" count="6"/>
+        <line num="62" type="stmt" count="6"/>
+        <line num="65" type="method" name="isCreature" crap="1" count="2"/>
+        <line num="67" type="stmt" count="2"/>
+        <line num="70" type="method" name="tap" crap="1" count="3"/>
         <line num="72" type="stmt" count="3"/>
-        <line num="74" type="method" name="tapped" crap="1" count="4"/>
-        <line num="76" type="stmt" count="4"/>
-        <line num="79" type="method" name="unTap" crap="1" count="1"/>
-        <line num="81" type="stmt" count="1"/>
+        <line num="73" type="stmt" count="3"/>
+        <line num="75" type="method" name="tapped" crap="1" count="4"/>
+        <line num="77" type="stmt" count="4"/>
+        <line num="80" type="method" name="unTap" crap="1" count="1"/>
         <line num="82" type="stmt" count="1"/>
+        <line num="83" type="stmt" count="1"/>
         <line num="85" type="method" name="name" crap="1" count="8"/>
         <line num="87" type="stmt" count="8"/>
         <metrics loc="89" ncloc="81" classes="1" methods="11" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="25" elements="36" coveredelements="36"/>
@@ -270,6 +270,6 @@
         <metrics loc="7" ncloc="7" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
     </package>
-    <metrics files="17" loc="484" ncloc="453" classes="17" methods="46" coveredmethods="46" conditionals="0" coveredconditionals="0" statements="115" coveredstatements="115" elements="161" coveredelements="161"/>
+    <metrics files="17" loc="485" ncloc="454" classes="17" methods="46" coveredmethods="46" conditionals="0" coveredconditionals="0" statements="115" coveredstatements="115" elements="161" coveredelements="161"/>
   </project>
 </coverage>
