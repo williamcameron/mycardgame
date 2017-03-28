@@ -47,6 +47,7 @@ class Player
             throw new NotEnoughManaException();
         }
         $this->battlefield->add($card);
+	$this->manaPool()->remove("");
     }
 
     public function tap($cardName = '')

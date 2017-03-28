@@ -8,4 +8,5 @@ class Manapool extends CardCollection
     {
         $this->push(new Mana(Mana::findByName($color_name)));
     }
+	
 }
