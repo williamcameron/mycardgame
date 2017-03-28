@@ -32,8 +32,9 @@ class CardCollection extends Collection
     {
         return $this->count();
     }
-	
-	public function remove($cards){
-		$this->pop($cards);
-	}
+
+    public function remove($cards)
+    {
+        $this->pop($cards);
+    }
 }
