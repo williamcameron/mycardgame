@@ -167,6 +167,18 @@ class GameTest extends TestCase
     }
 
     /** @test */
+    public function playing_creature_uses_mana()
+    {
+        $game = $this->startTestGame();
+        $game->drawOpeningHands();
+        $game->activePlayer()->play('Forest');
+        $game->activePlayer()->tap('Forest');
+        $this->assertEquals(1, $game->activePlayer()->manaPool()->size());
+        $game->activePlayer()->play('Norwood Ranger'); // Cost "G"
+        $this->assertEquals(0, $game->activePlayer()->manaPool()->size());
+    }
+
+    /** @test */
     public function players_start_game_with_20_health()
     {
         $game = $this->startTestGame();
