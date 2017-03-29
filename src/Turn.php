@@ -7,20 +7,20 @@ class Turn
     const PHASE_UNTAP = 1;
     const PHASE_UPKEEP = 2;
 
-    private $current_phase;
+    private $currentPhase;
 
     public function __construct()
     {
-        $this->current_phase = self::PHASE_UNTAP;
+        $this->currentPhase = self::PHASE_UNTAP;
     }
 
     public function phase()
     {
-        return $this->current_phase;
+        return $this->currentPhase;
     }
 
-    public function end_phase()
+    public function endPhase()
     {
-        $this->current_phase++;
+        $this->currentPhase++;
     }
 }

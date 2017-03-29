@@ -4,10 +4,10 @@ namespace William\Cards;
 
 class BasicLand extends Card
 {
-    protected $taps_for;
+    protected $tapsFor;
 
     public function tapsFor()
     {
-        return $this->taps_for;
+        return $this->tapsFor;
     }
 }

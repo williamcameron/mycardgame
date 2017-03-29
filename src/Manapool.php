@@ -4,8 +4,8 @@ namespace William;
 
 class Manapool extends CardCollection
 {
-    public function add($color_name = 'green')
+    public function add($colorName = 'green')
     {
-        $this->push(new Mana(Mana::findByName($color_name)));
+        $this->push(new Mana(Mana::findByName($colorName)));
     }
 }

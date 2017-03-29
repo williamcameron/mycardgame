@@ -21,7 +21,7 @@ class TurnTest extends TestCase
     public function end_untap_moves_to_upkeep_phase()
     {
         $turn = new Turn();
-        $turn->end_phase();
+        $turn->endPhase();
         $this->assertEquals(Turn::PHASE_UPKEEP, $turn->phase());
     }
 }

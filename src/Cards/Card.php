@@ -27,8 +27,8 @@ class Card
     {
         // TODO: Extract to Database or external file, cant have this inline
         $cards = [];
-        $cards['Forest'] = ['land' => true, 'taps_for' => 'green'];
-        $cards['Mountain'] = ['land' => true, 'taps_for' => 'red'];
+        $cards['Forest'] = ['land' => true, 'tapsFor' => 'green'];
+        $cards['Mountain'] = ['land' => true, 'tapsFor' => 'red'];
         $cards['Balduvian Bears'] = ['creature' => true, 'cost' => '1G', 'power' => 2, 'toughness' => 2];
         $cards['Norwood Ranger'] = ['creature' => true, 'cost' => 'G', 'power' => 1, 'toughness' => 2];
 
