@@ -17,7 +17,15 @@
 			return $this->cards;
 		}
 
-		public function draw(){
+		public function draw($num=1) {
+			if($num == 1){
 			return $this->cards->pop();
+			} else {
+				$cards = [];
+				for($x = 0;$x<$num;$x++){
+					$cards[] = $this->cards->pop();
+				}
+				return $cards;
+			}
 		}
 	}

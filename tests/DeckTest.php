@@ -18,4 +18,13 @@
 			$card = $deck->draw();
 			$this->assertInstanceOf("William\Card", $card);
 		}
+		
+		/** @test */
+		public function drawing_multiple_cards_gives_array_of_cards(){
+			$deck = new William\Deck;
+			$cards = $deck->draw(2);
+			$this->assertInternalType('array', $cards);
+			$first = $cards[0];
+			$this->assertInstanceOf("William\Card", $first);
+		}
 	}
