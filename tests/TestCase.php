@@ -17,16 +17,16 @@ use William\Cards\Creature;
           return Creature::make($specificCardName);
       }
 
-    /**
-     * @return \William\Game
-     */
-    protected function startTestGame()
-    {
-        $game = new William\Game();
-        $game->addPlayer(new William\Player());
-        $game->addPlayer(new William\Player());
-        $game->start();
+      /**
+       * @return \William\Game
+       */
+      protected function startTestGame()
+      {
+          $game = new William\Game();
+          $game->addPlayer(new William\Player());
+          $game->addPlayer(new William\Player());
+          $game->start();
 
-        return $game;
-    }
+          return $game;
+      }
   }
