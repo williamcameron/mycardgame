@@ -1,4 +1,5 @@
 <?php
+
     class PlayerTest extends TestCase
     {
         private function get_a_new_player()

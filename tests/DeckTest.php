@@ -1,4 +1,5 @@
 <?php
+
     class DeckTest extends TestCase
     {
         private function defaultDeck()
