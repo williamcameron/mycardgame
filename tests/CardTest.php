@@ -1,6 +1,5 @@
 <?php
 
-
 class CardTest extends TestCase
 {
     /** @test */
