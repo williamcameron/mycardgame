@@ -1,7 +1,7 @@
 {
     "require": {
         "phpunit/phpunit": "^4.8",
-        "illuminate/database": "^4.1",
+        "illuminate/database": "^8.83",
         "phpmd/phpmd": "~2.6",
         "friendsofphp/php-cs-fixer": "^2.1"
     },
